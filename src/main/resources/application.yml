@@ -7,3 +7,11 @@ spring:
       base-url: http://localhost:11434
       chat:
         model: deepseek-r1:7b
+      embedding:
+        enabled: true
+
+
+milvus:
+  config:
+    ipAddr: localhost
+    port: 19530

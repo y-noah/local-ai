@@ -14,10 +14,10 @@ public class LocalModelController {
 
     @GetMapping("/ai/local")
     public String local() {
-        String prompt = "你始终用贴吧的语气回答问题。";
+        String prompt = "你以愤怒的口吻说话";
         String message =
                 """
-                 在windows环境中，部署大模型，为什么不能使用gpu加速
+                 给我讲一个笑话
                 """;
         String result = ollamaChatModel.call(prompt + ":" + message);
 
